@@ -44,6 +44,6 @@ main img {
 }
 footer {
     margin-top: 10px;
-    border-top: 3px solid blue;
+    border-top: 3px dashed blue;
     text-align: center;
 }
