@@ -23,7 +23,7 @@ p {
     padding: 0;
 }
 main {
-    width: 480px;
+    max-width: 480px;
 }
 aside {
     width: 20rem;
@@ -35,7 +35,7 @@ aside {
     text-align: center;
 }
 aside img {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 main img {
