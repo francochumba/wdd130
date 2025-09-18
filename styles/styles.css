@@ -7,8 +7,7 @@
 :root {
     --heading-background-color: rgb(0, 153, 255);
     --border-color: 2px solid rgb(0, 76, 255);
-    --padding: 1rem;
-    --image-width: 2rem;
+    --padding: 7px;
 
 }
 
@@ -16,16 +15,20 @@ nav {
     background-color: var(--heading-background-color);
     padding: var(--padding);
 }
+
 nav a {
     color: white;
     display: block;
     padding: var(--padding);
     font-size: 15px;
 }
+
 h1 {
     color: var(--heading-background-color);
-    margin: 1rem;
+    margin: 10px;
+    padding: var(--padding);
 }
+
 img {
     width: 2rem;
     height: auto;
@@ -33,28 +36,45 @@ img {
     padding: var(--padding);
     margin: 2rem;
 }
+
 p {
     padding: 0;
 }
+
 main {
-    max-width: 480px;
+    max-width: 640px;
 }
-aside h2{
-    position: absolute;
-    width: 20em;
-    text-align: center;
-}
-aside img {
-    position: relative;
-    right: 10px;
-    width: 30rem;
-    height: auto;
-}
+
 main img {
     float: right;
+    margin: 0 0 1rem 1rem;
+    border: var(--border-color);
+    padding: var(--padding);
     width: 150px;
     height: auto;
 }
+
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    color: rgb(43, 69, 166);
+    font-size: 20px;
+    box-sizing: content-box;
+    background-color: rgba(157, 221, 255, 0.689);
+}
+
 footer {
     margin-top: 10px;
     border-top: 2px dashed blue;
@@ -65,8 +85,8 @@ footer {
 
 .box {
     margin: 1rem;
-    border: var(--border-color);
+    border: 1px solid rgb(79, 188, 255);
     padding: 1rem;
-    background-color: var(--heading-background-color);
-    color: var(--border-color);
+    background-color: rgb(181, 225, 255);
+    color: black;
 }
