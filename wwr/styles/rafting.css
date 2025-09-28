@@ -1,8 +1,9 @@
 :root {
+    --background-color: rgb(199, 199, 199);
     --primary-color: rgb(255, 255, 255);
-    --secondary-color: rgb(96, 199, 236);
-    --accent1-color: rgb(36, 96, 152);
-    --accent2-color: rgb(162, 142, 30);
+    --secondary-color: rgb(4, 70, 94);
+    --accent1-color: rgb(0, 30, 60);
+    --accent2-color: rgb(96, 83, 9);
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -16,6 +17,8 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    font-weight: normal;
+    background-color: var(--background-color);
 }
 
 header, main, footer {
@@ -40,13 +43,14 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 nav a {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
 }
 
 h1, h2 {
@@ -78,7 +82,6 @@ h1 {
     top: 20px;
     width: 100%;
     padding: 16px;
-    opacity: 0.8;
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
@@ -86,7 +89,8 @@ h1 {
 article {
     position: absolute;
     bottom: 10px;
-    background:rgba(96, 199, 236, 0.847);
+    background:rgba(0, 50, 100);
+    color: var(--primary-color);
 }
 
 article p {
@@ -153,7 +157,7 @@ section img {
 
 footer {
     display: flex;
-    justify-content: space space-between;
+    justify-content: space-between;
     align-items: center;    
     padding: 1rem 2rem;
     background-color: var(--accent1-color);
