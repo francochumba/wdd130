@@ -125,7 +125,7 @@ section img {
     max-width: 200px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .adventure-list{
@@ -142,7 +142,7 @@ section img {
 
 .adventure-list img{
     width: 100%;
-    height: auto;
+    height: 100px;
 }
 
 .adventure-list figcaption {
@@ -152,14 +152,21 @@ section img {
 }
 
 footer {
-    display: grid;
-    justify-items: center;
-    text-align: center;
-    gap: 0 2rem;
+    display: flex;
+    justify-content: space space-between;
+    align-items: center;    
+    padding: 1rem 2rem;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
 
 footer img {
     margin: 0 20px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
 }
 
 .socialmedia a {
@@ -169,4 +176,6 @@ footer img {
 .socialmedia img {
     width: 3rem;
     height: auto;
+    border-radius: 100%;
+    border: 2px solid white;
 }
