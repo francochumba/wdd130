@@ -20,18 +20,17 @@ body {
     color: var(--accent1-color);
     font-weight: normal;
     background-color: var(--background-color);
+    max-width: 1600px;
 
 }
 a {
+    color: var(--accent1-color);
 text-decoration: none;
 }
 a:hover {
     color: var(--hover-color);
 }
-header, main, footer,section {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+
 
 header {
     display: grid;
