@@ -28,8 +28,8 @@ text-decoration: none;
 a:hover {
     color: var(--hover-color);
 }
-header, main, footer {
-    max-width: 840px;
+header, main, footer,section {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -37,7 +37,7 @@ header {
     display: grid;
     grid-template-columns: 150px 2fr;
     align-items: center;
-    padding:1rem;
+    padding: 0 1rem;
     background-color: var(--accent1-color);
 }
 
@@ -48,15 +48,15 @@ header img {
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     list-style: none;
-    gap: 3rem;
 }
 
 nav a {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 16px;
+    margin: 0 20px;
 }
 
 h1, h2 {
@@ -65,58 +65,62 @@ h1, h2 {
     background: var(--secondary-color);
     padding: 10px;
     text-align: center;
+ 
 }
 
-nav, p, section, article {
-    margin: 1rem;
-    padding: 1rem;
+p, section {
+    margin: 1rem 0;
+    padding: 1rem 0;
 }
 
 .hero {
     position: relative;
     text-align: center;
 }
-
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; 
+  background: linear-gradient(to bottom, transparent, var(--background-color));
+}
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
+    
 }
 
-h1 {
+.hero h1 {
     position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
+    top: 80px;
+    right: 90px;
+    width: 80%;
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
 article {
     position: absolute;
-    bottom: 10px;
+ top:60%;
     background:rgba(0, 50, 100);
     color: var(--primary-color);
+    padding: 1rem;
+    margin: 1rem;
 }
 
 article p {
     color: var(--primary-color);
+    padding: 5px;
 }
 
 .hero article img {
     float: right;
     width: 160px;
     margin: 10px;
-}
-
-section {
-    max-width: 800px;
-    margin: auto;
-}
-
-section img {
-    max-width: 200px;
-    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.845);
+    border-radius: 4px;
 }
 
 .grid-history {
@@ -129,32 +133,37 @@ section img {
 
 .grid-history p{
     margin:0;
-  align-items: center;
+  
 }
 
 .grid-history img{
-    max-width: 200px;
+width: 300px;
+margin-top: 20px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.571);
+border-radius: 4px;
 
 }
-
 .adventure-list {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
 }
 
 .adventure-list figure {
-  flex: 100px;
-  max-width: 150px;
-  text-align:left;
+  flex: 1 1 180px;
+  max-width: 200px;
+  text-align: center;
 }
 
 .adventure-list img {
   width: 100%;
-  aspect-ratio: 4 / 3; 
-  object-fit: cover;  
-justify-content: space-around;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.845);
 }
 
 .adventure-list figcaption {
@@ -196,20 +205,11 @@ footer img {
 /* CONTACT PAGE */
 
 
-.header-info {
+.header-info{
+ display: block;
   text-align: center;
 }
 
-.header-info h1 {
-  position: static;
- 
-}
-.header-info p {
-  color: var(--accent1-color);
-  font-size: 1rem;
-  margin-bottom: 0;
-  padding: 0;
-}
 
 .contact-container {
   display: grid;
@@ -233,7 +233,8 @@ footer img {
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 0.75rem ;
-  background-color: var(--background-color);
+  background-color: var(--accent1-color);
+
   border:2px solid ;
   padding:2rem;
   border-radius: 4px;
@@ -245,7 +246,7 @@ footer img {
 .contact-container .contact-form legend {
   font-weight: 500;
   font-size: 0.95rem;
-  color: var(--accent2-color);
+  color: var(--primary-color);
   text-align: left;
 
 }
@@ -301,7 +302,7 @@ footer img {
 .contact-container .contact-form button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  border: 1px solid #555;
+  border: 1px solid var(--primary-color);
   padding: 1rem;
   border-radius: 3px;
   cursor: pointer;
