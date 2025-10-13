@@ -55,22 +55,32 @@
                     <fieldset>
                         <legend>Message Purpose</legend>
                         <div class="radio-group">
-                            <label><input type="radio" name="purpose" value="inquiry" required> General Inquiry</label>
-                            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                            <label for="purpose-inquiry">
+                                <input type="radio" id="purpose-inquiry" name="purpose" value="inquiry" required>
+                                General Inquiry
+                            </label>
+                            <label for="purpose-reservation">
+                                <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                                Reservation Question
+                            </label>
+                            <label for="purpose-suggestion">
+                                <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                                Website Suggestion
+                            </label>
                         </div>
                     </fieldset>
-
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" placeholder="Type your message here..."></textarea>
 
-                    <label class="newsletter">
-                        <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                    <label for="subscribe" class="newsletter">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
                     </label>
 
                     <button type="submit">Get in Touch!</button>
                 </form>
+
             </div>
         </section>
 
