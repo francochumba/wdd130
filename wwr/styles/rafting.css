@@ -358,24 +358,64 @@ article p {
     font-weight: bold;
     text-align: center;
 }
-
+/* footer */
 
 footer {
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+ 
+  
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+ justify-content: space-between;
+ margin:0 20px;
 }
 
 
-.socialmedia img {
-    width: 2rem;
-    height: auto;
-    border-radius: 100%;
-    border: 2px solid white;
+.newsletter h2 {
+color: var(--primary-color);
+font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
+
+footer .newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+ 
+}
+
+footer .socialmedia {
+  margin-top: 90px;
+  
+}
+
+footer .socialmedia img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  transition: transform 0.2s ease;
+}
+
+footer .socialmedia img:hover {
+  transform: scale(1.1);
+}
+
+footer p {
+  
+  font-size: 0.9rem;
+}
+
+
 
 /* CONTACT PAGE */
 
@@ -433,7 +473,8 @@ footer {
 
 }
 
-
+footer .newsletter-form input[type="text"],
+footer .newsletter-form input[type="email"],
 .contact-container .contact-form input[type="text"],
 .contact-container .contact-form input[type="email"],
 .contact-container .contact-form textarea {
